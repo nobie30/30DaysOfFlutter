@@ -8,6 +8,7 @@ class Homepage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.black,
+        foregroundColor: Colors.white,
         title: Text("Catalog"),
       ),
       body: Center(

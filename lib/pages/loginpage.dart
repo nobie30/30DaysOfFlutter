@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_catalog/util/routes.dart';
 
 class Loginpage extends StatelessWidget {
   const Loginpage({super.key});
@@ -47,12 +48,16 @@ class Loginpage extends StatelessWidget {
                   height: 180,
                 ),
                 ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.pushNamed(context, MyRoutes.homeRoute);
+                  },
                   child: Text(
                     "LOG IN",
                     style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
                   ),
-                  style: TextButton.styleFrom(backgroundColor: Colors.yellow),
+                  style: TextButton.styleFrom(
+                      backgroundColor: Colors.yellow,
+                      minimumSize: Size(150, 50)),
                 ),
               ],
             ),
